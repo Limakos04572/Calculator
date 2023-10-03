@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Kalkulator";
+}
+    <form method="post" action="Calculator">
+        <div>
+            <label>Liczba 1:</label>
+            <input type="number" name="num1" required>
+        </div>
+        <div>
+            <label>Operator:</label>
+            <select name="znak" required>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        </div>
+        <div>
+            <label>Liczba 2:</label>
+            <input type="number" name="num2" required>
+        </div>
+        <div>
+            <input type="submit" value="Oblicz">
+        </div>
+    </form>
+    <div>
+        <h3>Wynik:</h3>
+        <p>@ViewBag.wynik</p>
+    </div>
+
+
